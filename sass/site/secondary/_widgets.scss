@@ -1,13 +1,34 @@
 .widget {
-	margin: 0 0 1.5em;
+	margin: 0 0 .9em;
 
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
+
+  h1{
+	@include font-size(1.1);
+  }
+
+   a{
+	 @include font-size(1);
+   }
+
+  ul{
+	margin: 0 0 0 0;
+
+  }
 }
 
 /* Search widget. */
+
+.widget_search{
+  width: 100%;
+
+  .search-field{
+	@include font-size(1.2);
+  }
+}
 .widget_search .search-submit {
 	display: none;
 }

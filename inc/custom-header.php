@@ -25,10 +25,10 @@
 function simone_slug_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'simone_slug_custom_header_args', array(
 		'default-image'          => '',
-		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
-		'flex-height'            => true,
+		'default-text-color'     => 'ffffff',
+		'width'                  => 1900,
+		'height'                 => 1600,
+		'flex-height'            => false,// if true it will let the image dictate the height of the container
 		'wp-head-callback'       => 'simone_slug_header_style',
 		'admin-head-callback'    => 'simone_slug_admin_header_style',
 		'admin-preview-callback' => 'simone_slug_admin_header_image',
@@ -58,8 +58,8 @@ function simone_slug_header_style() {
 		// Has the text been hidden?
 		if ( 'blank' == $header_text_color ) :
 	?>
-		.site-title,
-		.site-description {
+		/*enter in classes that need to get hidden here*/
+		.site-branding {
 			position: absolute;
 			clip: rect(1px, 1px, 1px, 1px);
 		}

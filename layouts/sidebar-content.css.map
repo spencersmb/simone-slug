@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;AAAA,aAAc;EACb,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,UAA4B;EACpC,KAAK,ECHY,IAAI;;ADMtB,UAAW;EACV,MAAM,EAAE,SAAyB;;AAGlC,0BAA2B;EAC1B,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,MAAM;EAChB,KAAK,ECZe,GAAG;;ADexB,YAAa;EACZ,KAAK,EAAE,IAAI;EACX,KAAK,EClBY,IAAI",
+"sources": ["../sass/layout/_sidebar-content-a.scss","../sass/variables-site/_structure.scss"],
+"names": [],
+"file": "sidebar-content.css"
+}

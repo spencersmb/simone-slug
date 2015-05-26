@@ -1,8 +1,14 @@
+//main container
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+  position: relative;
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+  font-family: $font__header;
+  text-transform: uppercase;
+  background: #313131;
+
 
 	ul {
 		list-style: none;
@@ -13,9 +19,10 @@
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
-			top: 1.5em;
+		  //top: 1.5em;
 			left: -999em;
 			z-index: 99999;
+		  	background: #4d4d4d;
 
 			ul {
 				left: -999em;
@@ -23,6 +30,7 @@
 			}
 
 			li {
+
 				&:hover > ul {
 					left: 100%;
 				}
@@ -35,7 +43,9 @@
 			:hover > a {
 			}
 
+		  	//hover states for the dropdown
 			a:hover {
+			  background: #313131;
 			}
 		}
 
@@ -47,17 +57,29 @@
 		float: left;
 		position: relative;
 
+	  //hover state for the bar
 		&:hover > a {
+		  color:#fff;
+		  background: #4d4d4d;
 		}
 	}
+
+  //seperates the labels and give them style
 	a {
-		display: block;
-		text-decoration: none;
+	  @include font-size(.9);
+	  line-height: 1.3em;
+	  color:#ffffff;
+	  padding:1.3em 1em;
+	  display: block;
+	  text-decoration: none;
 	}
 
+  	//highlights when the page is selected or the dropdown item is selected
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+	  background: #979797;
+	  color: #fff;
 	}
 }
 
@@ -66,15 +88,115 @@
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
+@media screen and (max-width: 991px) {
+
+
+  .menu-toggle,
+  .main-navigation.toggled .nav-menu {
+	font-family: $font__header;
+	display: block;
+	padding: 0 0;
+	font-weight: normal;
+	@include font-size(.9);
+	text-decoration: none;
+	line-height: 3.75em;
+	color:#ffffff;
+	background: transparent;
+
+  }
+
+  .menu-toggle{
+	//button settings
+	padding: 0 1em;
+	border: none;
+	box-shadow: none;
+	display: block;
+
+	&:hover{
+	  border: none;
+	  box-shadow: none;
+	}
+  }
+
+  .nav-menu{
+	border-top: solid 1px #fff;
+  }
+
+  	//remove padding for ul since we added it for desktop
+	.main-navigation {
+	  ul {
+
+		padding-left: 0;
+		display: none;
+		ul{
+		  float: none;
+		  box-shadow:none;
+		  left:0;
+
+		  ul{
+			left:0;
+		  }
+
+		  a{
+			width:100%;
+		  }
+
+		  li{
+
+			&:hover > ul {
+			  left:auto;
+			}
+
+		  }
+		}
+
+	  }
+
+	  li{
+
+		float: none;
 		display: block;
+
+
+		li{
+			a{
+			  padding-left: 4em;
+			}
+
+		  li{
+			a{
+			  padding-left: 6em;
+			}
+		  }
+		}
+
+		a{
+		  padding: 1.3em 2em;
+		}
+
+		&:hover > a {
+		  color:#4d4d4d;
+		  background: #fff;
+		}
+
+	  }
+
+	  .current_page_item > a,
+	  .current-menu-item > a,
+	  .current_page_ancestor > a {
+		background: transparent;
+		color: #fff;
+	  }
+
 	}
 
-	.main-navigation ul {
-		display: none;
-	}
+  .main-navigation ul ul,
+  .main-navigation ul ul ul {
+	position: relative;
+  }
+
+
+
 }
 
 .comment-navigation,

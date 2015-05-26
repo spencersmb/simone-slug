@@ -17,6 +17,7 @@ Simone4 is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+TEST
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -47,12 +48,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
+  -ms-text-size-adjust: 100%; }
 
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 article,
 aside,
@@ -66,107 +65,86 @@ menu,
 nav,
 section,
 summary {
-  display: block;
-}
+  display: block; }
 
 audio,
 canvas,
 progress,
 video {
   display: inline-block;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 [hidden],
 template {
-  display: none;
-}
+  display: none; }
 
 a {
-  background-color: transparent;
-}
+  background-color: transparent; }
 
 a:active,
 a:hover {
-  outline: 0;
-}
+  outline: 0; }
 
 abbr[title] {
-  border-bottom: 1px dotted;
-}
+  border-bottom: 1px dotted; }
 
 b,
 strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
-}
+  margin: 0.67em 0; }
 
 mark {
   background: #ff0;
-  color: #000;
-}
+  color: #000; }
 
 small {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 sub,
 sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
 
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 img {
-  border: 0;
-}
+  border: 0; }
 
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 figure {
-  margin: 1em 40px;
-}
+  margin: 1em 40px; }
 
 hr {
   box-sizing: content-box;
-  height: 0;
-}
+  height: 0; }
 
 pre {
-  overflow: auto;
-}
+  overflow: auto; }
 
 code,
 kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 button,
 input,
@@ -175,90 +153,73 @@ select,
 textarea {
   color: inherit;
   font: inherit;
-  margin: 0;
-}
+  margin: 0; }
 
 button {
-  overflow: visible;
-}
+  overflow: visible; }
 
 button,
 select {
-  text-transform: none;
-}
+  text-transform: none; }
 
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 button[disabled],
 html input[disabled] {
-  cursor: default;
-}
+  cursor: default; }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 input {
-  line-height: normal;
-}
+  line-height: normal; }
 
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
-  padding: 0;
-}
+  padding: 0; }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
+  height: auto; }
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  box-sizing: content-box;
-}
+  box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
+  padding: 0.35em 0.625em 0.75em; }
 
 legend {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 textarea {
-  overflow: auto;
-}
+  overflow: auto; }
 
 optgroup {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 td,
 th {
-  padding: 0;
-}
+  padding: 0; }
 
 /*--------------------------------------------------------------
 2.0 Typography
@@ -269,135 +230,133 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Serif", serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5;
-}
+  line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-}
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  margin: 0; }
+
+h1 {
+  font-size: 28.8px;
+  font-size: 1.8rem; }
+  h1 a {
+    font-size: 28.8px;
+    font-size: 1.8rem; }
+
+h2 {
+  font-size: 25.6px;
+  font-size: 1.6rem;
+  margin: 15px 0; }
 
 p {
   font-family: "PT Serif", serif;
   margin-bottom: 1.5em;
-}
+  font-size: 16px;
+  font-size: 1rem; }
 
 dfn, cite, em, i {
-  font-style: italic;
-}
+  font-style: italic; }
 
 blockquote {
-  margin: 0 1.5em;
-}
+  margin: 0 1.5em; }
 
 address {
-  margin: 0 0 1.5em;
-}
+  margin: 0 0 1.5em; }
 
 pre {
-  background: #eeeeee;
+  background: #eee;
   font-family: "PT Serif", serif;
   font-size: 15px;
   font-size: 0.9375rem;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 1.6em;
-}
+  padding: 1.6em; }
 
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
-  font-size: 0.9375rem;
-}
+  font-size: 0.9375rem; }
 
 abbr, acronym {
-  border-bottom: 1px dotted #666666;
-  cursor: help;
-}
+  border-bottom: 1px dotted #666;
+  cursor: help; }
 
 mark, ins {
   background: #fff9c0;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 big {
-  font-size: 125%;
-}
+  font-size: 125%; }
+
+a {
+  font-size: 16px;
+  font-size: 1rem;
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *,
 *:before,
 *:after {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 body {
-  background: white;
-  /* Fallback for when there is no custom background color defined. */
-}
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
-  quotes: "" "";
-}
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-}
+  quotes: "" ""; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: ""; }
 
 hr {
-  background-color: #cccccc;
+  background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em;
-}
+  margin-bottom: 1.5em; }
 
 ul, ol {
-  margin: 0 0 1.5em 3em;
-}
+  margin: 0 0 1.5em 3em; }
 
 ul {
-  list-style: disc;
-}
+  list-style: none; }
 
 ol {
-  list-style: decimal;
-}
+  list-style: decimal; }
 
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em;
-}
+  margin-left: 1.5em; }
 
 dt {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 dd {
-  margin: 0 1.5em 1.5em;
-}
+  margin: 0 1.5em 1.5em; }
 
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
-  /* Adhere to container width. */
-}
+  /* Adhere to container width. */ }
 
 table {
   margin: 0 0 1.5em;
-  width: 100%;
-}
+  width: 100%; }
 
 /*--------------------------------------------------------------
 4.0 Forms
@@ -407,7 +366,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #cccccc #cccccc #bbbbbb;
+  border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
@@ -416,25 +375,22 @@ input[type="submit"] {
   font-size: 0.75rem;
   line-height: 1;
   padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  border-color: #cccccc #bbbbbb #aaaaaa;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-}
-button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-  border-color: #aaaaaa #bbbbbb #bbbbbb;
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-}
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  button:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover {
+    border-color: #ccc #bbb #aaa;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+  button:active, button:focus,
+  input[type="button"]:active,
+  input[type="button"]:focus,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
+    border-color: #aaa #bbb #bbb;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
 input[type="text"],
 input[type="email"],
@@ -442,31 +398,27 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666666;
-  border: 1px solid #cccccc;
-  border-radius: 3px;
-}
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-  color: #111111;
-}
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px; }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  textarea:focus {
+    color: #111; }
 
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px;
-}
+  padding: 3px; }
 
 textarea {
   padding-left: 3px;
-  width: 100%;
-}
+  width: 100%; }
 
 /*--------------------------------------------------------------
 5.0 Navigation
@@ -475,99 +427,150 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue;
-}
-a:visited {
-  color: purple;
-}
-a:hover, a:focus, a:active {
-  color: midnightblue;
-}
-a:focus {
-  outline: thin dotted;
-}
-a:hover, a:active {
-  outline: 0;
-}
+  color: royalblue; }
+  a:visited {
+    color: purple; }
+  a:hover, a:focus, a:active {
+    color: midnightblue; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
 
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
+  position: relative;
   clear: both;
   display: block;
   float: left;
   width: 100%;
-}
-.main-navigation ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-.main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
-  position: absolute;
-  top: 1.5em;
-  left: -999em;
-  z-index: 99999;
-}
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0;
-}
-.main-navigation ul ul li:hover > ul {
-  left: 100%;
-}
-.main-navigation ul ul a {
-  width: 200px;
-}
-.main-navigation ul li:hover > ul {
-  left: auto;
-}
-.main-navigation li {
-  float: left;
-  position: relative;
-}
-.main-navigation a {
-  display: block;
-  text-decoration: none;
-}
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  background: #313131; }
+  .main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    .main-navigation ul ul {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
+      position: absolute;
+      left: -999em;
+      z-index: 99999;
+      background: #4d4d4d; }
+      .main-navigation ul ul ul {
+        left: -999em;
+        top: 0; }
+      .main-navigation ul ul li:hover > ul {
+        left: 100%; }
+      .main-navigation ul ul a {
+        width: 200px; }
+      .main-navigation ul ul a:hover {
+        background: #313131; }
+    .main-navigation ul li:hover > ul {
+      left: auto; }
+  .main-navigation li {
+    float: left;
+    position: relative; }
+    .main-navigation li:hover > a {
+      color: #fff;
+      background: #4d4d4d; }
+  .main-navigation a {
+    font-size: 14.4px;
+    font-size: 0.9rem;
+    line-height: 1.3em;
+    color: #ffffff;
+    padding: 1.3em 1em;
+    display: block;
+    text-decoration: none; }
+  .main-navigation .current_page_item > a,
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current_page_ancestor > a {
+    background: #979797;
+    color: #fff; }
 
 /* Small menu. */
 .menu-toggle {
-  display: none;
-}
+  display: none; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991px) {
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
+    font-family: "Roboto", sans-serif;
     display: block;
-  }
+    padding: 0 0;
+    font-weight: normal;
+    font-size: 14.4px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    line-height: 3.75em;
+    color: #ffffff;
+    background: transparent; }
+
+  .menu-toggle {
+    padding: 0 1em;
+    border: none;
+    box-shadow: none;
+    display: block; }
+    .menu-toggle:hover {
+      border: none;
+      box-shadow: none; }
+
+  .nav-menu {
+    border-top: solid 1px #fff; }
 
   .main-navigation ul {
-    display: none;
-  }
-}
+    padding-left: 0;
+    display: none; }
+    .main-navigation ul ul {
+      float: none;
+      box-shadow: none;
+      left: 0; }
+      .main-navigation ul ul ul {
+        left: 0; }
+      .main-navigation ul ul a {
+        width: 100%; }
+      .main-navigation ul ul li:hover > ul {
+        left: auto; }
+  .main-navigation li {
+    float: none;
+    display: block; }
+    .main-navigation li li a {
+      padding-left: 4em; }
+    .main-navigation li li li a {
+      padding-left: 6em; }
+    .main-navigation li a {
+      padding: 1.3em 2em; }
+    .main-navigation li:hover > a {
+      color: #4d4d4d;
+      background: #fff; }
+  .main-navigation .current_page_item > a,
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current_page_ancestor > a {
+    background: transparent;
+    color: #fff; }
+
+  .main-navigation ul ul,
+  .main-navigation ul ul ul {
+    position: relative; } }
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
-  overflow: hidden;
-}
+  overflow: hidden; }
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
-  width: 50%;
-}
+  width: 50%; }
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
   float: right;
   text-align: right;
-  width: 50%;
-}
+  width: 50%; }
 
 /*--------------------------------------------------------------
 6.0 Accessibility
@@ -578,28 +581,26 @@ a:hover, a:active {
   position: absolute !important;
   height: 1px;
   width: 1px;
-  overflow: hidden;
-}
-.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  color: #21759b;
-  display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
-  /* Above WP toolbar. */
-}
+  overflow: hidden; }
+  .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
 
 /*--------------------------------------------------------------
 7.0 Alignments
@@ -607,20 +608,17 @@ a:hover, a:active {
 .alignleft {
   display: inline;
   float: left;
-  margin-right: 1.5em;
-}
+  margin-right: 1.5em; }
 
 .alignright {
   display: inline;
   float: right;
-  margin-left: 1.5em;
-}
+  margin-left: 1.5em; }
 
 .aligncenter {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 /*--------------------------------------------------------------
 8.0 Clearings
@@ -638,8 +636,7 @@ a:hover, a:active {
 .site-footer:before,
 .site-footer:after {
   content: "";
-  display: table;
-}
+  display: table; }
 
 .clear:after,
 .entry-content:after,
@@ -647,24 +644,34 @@ a:hover, a:active {
 .site-header:after,
 .site-content:after,
 .site-footer:after {
-  clear: both;
-}
+  clear: both; }
 
 /*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. */
-}
-.widget select {
-  max-width: 100%;
-}
+  margin: 0 0 .9em;
+  /* Make sure select elements fit in widgets. */ }
+  .widget select {
+    max-width: 100%; }
+  .widget h1 {
+    font-size: 17.6px;
+    font-size: 1.1rem; }
+  .widget a {
+    font-size: 16px;
+    font-size: 1rem; }
+  .widget ul {
+    margin: 0 0 0 0; }
 
 /* Search widget. */
+.widget_search {
+  width: 100%; }
+  .widget_search .search-field {
+    font-size: 19.2px;
+    font-size: 1.2rem; }
+
 .widget_search .search-submit {
-  display: none;
-}
+  display: none; }
 
 /*--------------------------------------------------------------
 10.0 Content
@@ -673,52 +680,43 @@ a:hover, a:active {
 10.1 Posts and pages
 --------------------------------------------------------------*/
 .sticky {
-  display: block;
-}
+  display: block; }
 
 .hentry {
-  margin: 0 0 1.5em;
-}
+  margin: 0 0 1.5em; }
 
 .byline,
 .updated:not(.published) {
-  display: none;
-}
+  display: none; }
 
 .single .byline,
 .group-blog .byline {
-  display: inline;
-}
+  display: inline; }
 
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
-}
+  margin: 1.5em 0 0; }
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5em;
-}
+  margin: 0 0 1.5em; }
 
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-  display: none;
-}
+  display: none; }
 
 /*--------------------------------------------------------------
 10.3 Comments
 --------------------------------------------------------------*/
 .comment-content a {
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
 
 .bypostauthor {
-  display: block;
-}
+  display: block; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll
@@ -727,13 +725,11 @@ a:hover, a:active {
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
-  display: none;
-}
+  display: none; }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
-  display: block;
-}
+  display: block; }
 
 /*--------------------------------------------------------------
 12.0 Media
@@ -744,74 +740,121 @@ a:hover, a:active {
   border: none;
   margin-bottom: 0;
   margin-top: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
 object {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 /*--------------------------------------------------------------
 12.1 Captions
 --------------------------------------------------------------*/
 .wp-caption {
   margin-bottom: 1.5em;
-  max-width: 100%;
-}
-.wp-caption img[class*="wp-image-"] {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.wp-caption .wp-caption-text {
-  margin: 0.8075em 0;
-}
+  max-width: 100%; }
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .wp-caption .wp-caption-text {
+    margin: 0.8075em 0; }
 
 .wp-caption-text {
-  text-align: center;
-}
+  text-align: center; }
 
 /*--------------------------------------------------------------
 12.2 Galleries
 --------------------------------------------------------------*/
 .gallery {
-  margin-bottom: 1.5em;
-}
+  margin-bottom: 1.5em; }
 
 .gallery-item {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  width: 100%;
-}
-.gallery-columns-2 .gallery-item {
-  max-width: 50%;
-}
-.gallery-columns-3 .gallery-item {
-  max-width: 33.33%;
-}
-.gallery-columns-4 .gallery-item {
-  max-width: 25%;
-}
-.gallery-columns-5 .gallery-item {
-  max-width: 20%;
-}
-.gallery-columns-6 .gallery-item {
-  max-width: 16.66%;
-}
-.gallery-columns-7 .gallery-item {
-  max-width: 14.28%;
-}
-.gallery-columns-8 .gallery-item {
-  max-width: 12.5%;
-}
-.gallery-columns-9 .gallery-item {
-  max-width: 11.11%;
-}
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
 
 .gallery-caption {
-  display: block;
-}
+  display: block; }
+
+/*--------------------------------------------------------------
+13.0 Header
+--------------------------------------------------------------*/
+.site-branding {
+  padding: 3rem 0;
+  text-align: center;
+  background: #2c86ba;
+  background: #2c86ba;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.site-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: normal;
+  margin: 0 0 0 0;
+  padding-bottom: 0; }
+  .site-title a {
+    font-size: 48px;
+    font-size: 3rem;
+    color: #fff; }
+    .site-title a:hover {
+      color: #000; }
+
+.site-description {
+  font-weight: 100;
+  color: #fff;
+  margin: 0;
+  font-size: 19.2px;
+  font-size: 1.2rem; }
+
+@media screen and (min-width: 768px) {
+  .site-branding {
+    padding: 5rem 0; }
+
+  .site-title {
+    text-transform: uppercase;
+    margin: 15px 0 0 0; }
+    .site-title a {
+      font-size: 56px;
+      font-size: 3.5rem; }
+
+  .site-description {
+    font-size: 24px;
+    font-size: 1.5rem; } }
+@media screen and (min-width: 991px) {
+  .site-branding {
+    padding: 6rem 0; }
+
+  .site-title {
+    text-transform: uppercase;
+    margin: 15px 0 0 0;
+    padding-bottom: 1rem; }
+    .site-title a {
+      font-size: 72px;
+      font-size: 4.5rem; }
+
+  .site-description {
+    font-size: 32px;
+    font-size: 2rem; } }
+
+/*# sourceMappingURL=style.css.map */

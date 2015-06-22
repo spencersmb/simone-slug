@@ -1009,50 +1009,83 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 /* line 1, sass/site/secondary/_widgets.scss */
 .widget {
-  margin: 0 0 .9em;
+  margin: 0 0 4em;
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
   /* Make sure select elements fit in widgets. */
 }
-/* line 6, sass/site/secondary/_widgets.scss */
+/* line 7, sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
 }
-/* line 10, sass/site/secondary/_widgets.scss */
+/* line 11, sass/site/secondary/_widgets.scss */
 .widget h1 {
   font-size: 17.6px;
   font-size: 1.1rem;
 }
-/* line 14, sass/site/secondary/_widgets.scss */
+/* line 15, sass/site/secondary/_widgets.scss */
 .widget a {
   font-size: 16px;
   font-size: 1rem;
+  font-weight: 700;
+  color: #000;
 }
-/* line 18, sass/site/secondary/_widgets.scss */
-.widget ul {
+/* line 21, sass/site/secondary/_widgets.scss */
+.widget ul, .widget ol {
   margin: 0 0 0 0;
+  list-style-type: none;
+  padding: 0;
+}
+/* line 27, sass/site/secondary/_widgets.scss */
+.widget li {
+  padding: 1em 0 0;
+}
+/* line 30, sass/site/secondary/_widgets.scss */
+.widget li ul, .widget li ol {
+  margin-top: 0;
+}
+/* line 34, sass/site/secondary/_widgets.scss */
+.widget li li {
+  margin-left: 1.5em;
 }
 
 /* Search widget. */
-/* line 26, sass/site/secondary/_widgets.scss */
+/* line 42, sass/site/secondary/_widgets.scss */
 .widget_search {
   width: 100%;
 }
-/* line 29, sass/site/secondary/_widgets.scss */
+/* line 45, sass/site/secondary/_widgets.scss */
 .widget_search .search-field {
   font-size: 19.2px;
   font-size: 1.2rem;
 }
 
-/* line 33, sass/site/secondary/_widgets.scss */
+/* line 49, sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none;
 }
 
-/* line 37, sass/site/secondary/_widgets.scss */
+/* line 53, sass/site/secondary/_widgets.scss */
 .widget-title {
   margin-bottom: 1em;
   font-size: 24px;
   border-bottom: 2px solid #000000;
+}
+
+/* line 60, sass/site/secondary/_widgets.scss */
+.footer-widgets {
+  margin: 0 auto;
+}
+/* line 63, sass/site/secondary/_widgets.scss */
+.footer-widgets .widget-title, .footer-widgets .footer-widgets, .footer-widgets .widget a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+/* line 69, sass/site/secondary/_widgets.scss */
+.footer-widgets .widget {
+  float: left;
+  width: 320px;
+  margin: 0 4rem 8rem 4rem;
 }
 
 /*--------------------------------------------------------------

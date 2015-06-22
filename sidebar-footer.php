@@ -12,7 +12,7 @@ if ( ! is_active_sidebar( 'sidebar-2' ) ) {
 ?>
 
 <div id="supplementary">
-  <div id="footer-widgets" class="footer-widget widget-area clear" role="complementary">
+  <div id="footer-widgets" class="footer-widgets widget-area clear" role="complementary">
 	  <?php dynamic_sidebar( 'sidebar-2' ); ?>
   </div>
 </div><!-- #supplementary -->

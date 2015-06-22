@@ -11,6 +11,9 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+<!--    //calling get_sidebar automatically adds sidebar to the name so we just need to call anything after the dash-->
+    <?php get_sidebar('footer') ?>
+
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'simone-slug' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'simone-slug' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
@@ -18,6 +21,7 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+
 
 <?php wp_footer(); ?>
 

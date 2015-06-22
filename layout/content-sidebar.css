@@ -1,0 +1,84 @@
+/*
+Theme Name: Simone4
+Layout: Content-Sidebar
+*/
+/* line 5, ../sass/layout/_content-sidebar-a.scss */
+.site-main {
+  background: #b2b2b2;
+}
+
+/* line 12, ../sass/layout/_content-sidebar-a.scss */
+.site-content .widget-area {
+  float: none;
+  overflow: hidden;
+  padding: 4rem;
+  max-width: 780px;
+  width: auto;
+  margin: 1em auto 0;
+}
+
+/* line 21, ../sass/layout/_content-sidebar-a.scss */
+.site-footer {
+  clear: both;
+  width: 100%;
+}
+
+/* line 27, ../sass/layout/_content-sidebar-a.scss */
+.entry-header,
+.entry-content,
+.entry-meta,
+.entry-footer,
+.tag-links,
+.post-navigation,
+.comments-area,
+.paging-navigation {
+  position: relative;
+  max-width: 780px;
+  max-width: 78 rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1160px) {
+  /* line 47, ../sass/layout/_content-sidebar-a.scss */
+  .entry-header,
+  .entry-content,
+  .entry-meta,
+  .entry-footer,
+  .tag-links,
+  .post-navigation,
+  .comments-area,
+  .paging-navigation {
+    margin-right: 0;
+  }
+
+  /* line 58, ../sass/layout/_content-sidebar-a.scss */
+  .site-content .widget-area {
+    float: right;
+    max-width: none;
+    width: 380px;
+    margin: 0;
+  }
+
+  /* line 65, ../sass/layout/_content-sidebar-a.scss */
+  .content-area {
+    float: left;
+    margin: 0 -380px 0 0;
+    width: 100%;
+    margin-left: -380px;
+    padding-left: 380px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  /* line 76, ../sass/layout/_content-sidebar-a.scss */
+  .entry-header,
+  .entry-content,
+  .entry-meta,
+  .entry-footer,
+  .tag-links,
+  .post-navigation,
+  .comments-area,
+  .paging-navigation {
+    margin-right: 170px;
+  }
+}

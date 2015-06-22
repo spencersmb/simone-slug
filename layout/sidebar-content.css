@@ -1,0 +1,28 @@
+/*
+Theme Name: Simone4
+Layout: Sidebar-Content
+*/
+/* line 1, ../sass/layout/_sidebar-content-a.scss */
+.content-area {
+  float: right;
+  margin: 0 0 0 -380px;
+  width: 100%;
+}
+
+/* line 7, ../sass/layout/_sidebar-content-a.scss */
+.site-main {
+  margin: 0 0 0 380px;
+}
+
+/* line 11, ../sass/layout/_sidebar-content-a.scss */
+.site-content .widget-area {
+  float: left;
+  overflow: hidden;
+  width: 380px;
+}
+
+/* line 17, ../sass/layout/_sidebar-content-a.scss */
+.site-footer {
+  clear: both;
+  width: 100%;
+}

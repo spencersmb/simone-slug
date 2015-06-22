@@ -1,0 +1,22 @@
+/*
+Theme Name: Simone4
+Layout: Sidebar-Content
+*/
+.content-area {
+  float: right;
+  margin: 0 0 0 -380px;
+  width: 100%; }
+
+.site-main {
+  margin: 0 0 0 380px; }
+
+.site-content .widget-area {
+  float: left;
+  overflow: hidden;
+  width: 380px; }
+
+.site-footer {
+  clear: both;
+  width: 100%; }
+
+/*# sourceMappingURL=sidebar-content.css.map */

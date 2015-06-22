@@ -49,8 +49,10 @@ function simone_slug_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location. Name of nav, name of theme
+  //Builds out custom nav properties to inject anywhere in the HTML
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'simone-slug' ),
+    'social' => __( 'Social Menu', 'simone-slug' )
 	) );
 
 	/*
@@ -94,6 +96,16 @@ function simone_slug_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+
+  register_sidebar( array(
+    'name'          => __( 'Footer Widgets', 'simone-slug' ),
+    'description'   => __( 'Footer widgets area appears in the footer of the site.', 'simone-slug' ),
+    'id'            => 'sidebar-2',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h1 class="widget-title">',
+    'after_title'   => '</h1>',
+  ) );
 }
 add_action( 'widgets_init', 'simone_slug_widgets_init' );
 
@@ -126,6 +138,10 @@ function simone_slug_scripts() {
 	//Superfish Settings
 	wp_enqueue_script( 'simone-slug-sfSettings', get_template_directory_uri() . '/js/superfish-settings.js', array
 	('simone-slug-superfish'), '20140328', true );
+
+  //Search toggle
+  wp_enqueue_script( 'search-toggle', get_template_directory_uri() . '/js/search-toggle.js', array
+  ('jquery'), '20150619', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

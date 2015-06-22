@@ -52,7 +52,27 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Menu', 'simone-slug' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+      <!-- THe link targets the search container ID - hides the text and marked up to be translated-->
+      <div class="search-toggle">
+        <i class="fa fa-search"></i>
+        <a href="#search-container" class="screen-reader-text"><?php _e('Search', 'siimone-slug') ?></a>
+      </div>
+
+      <!--  Added Social menu build function located in template-tags -->
+      <?php swp_social_menu(); ?>
 		</nav><!-- #site-navigation -->
+
+    <div id="search-container" class="search-box-wrapper clear">
+      <div class="search-box clear">
+
+        <?php get_search_form(); ?>
+
+      </div>
+    </div>
+
+
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

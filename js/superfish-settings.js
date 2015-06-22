@@ -26,6 +26,8 @@
            });
        } else if($(document).width() < breakpoint){
            sf.superfish('destroy');
+
+
        }
     });
 

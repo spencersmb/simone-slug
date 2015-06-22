@@ -1,0 +1,68 @@
+/*
+Theme Name: Simone4
+Layout: Content-Sidebar
+*/
+.site-main {
+  background: #b2b2b2; }
+
+.site-content .widget-area {
+  float: none;
+  overflow: hidden;
+  padding: 4rem;
+  max-width: 780px;
+  width: auto;
+  margin: 1em auto 0; }
+
+.site-footer {
+  clear: both;
+  width: 100%; }
+
+.entry-header,
+.entry-content,
+.entry-meta,
+.entry-footer,
+.tag-links,
+.post-navigation,
+.comments-area,
+.paging-navigation {
+  position: relative;
+  max-width: 780px;
+  max-width: 78 rem;
+  padding: 0 4rem;
+  margin: 0 auto; }
+
+@media screen and (min-width: 1160px) {
+  .entry-header,
+  .entry-content,
+  .entry-meta,
+  .entry-footer,
+  .tag-links,
+  .post-navigation,
+  .comments-area,
+  .paging-navigation {
+    margin-right: 0; }
+
+  .site-content .widget-area {
+    float: right;
+    max-width: none;
+    width: 380px;
+    margin: 0; }
+
+  .content-area {
+    float: left;
+    margin: 0 -380px 0 0;
+    width: 100%;
+    margin-left: -380px;
+    padding-left: 380px; } }
+@media screen and (min-width: 1600px) {
+  .entry-header,
+  .entry-content,
+  .entry-meta,
+  .entry-footer,
+  .tag-links,
+  .post-navigation,
+  .comments-area,
+  .paging-navigation {
+    margin-right: 170px; } }
+
+/*# sourceMappingURL=content-sidebar.css.map */

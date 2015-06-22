@@ -19,7 +19,8 @@
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
-		  //top: 1.5em;
+          @include opacity(1);
+		    //top: 1.5em;
 			left: -999em;
 			z-index: 99999;
 		  	background: #4d4d4d;
@@ -132,6 +133,7 @@
 		  float: none;
 		  box-shadow:none;
 		  left:0;
+          display:block;
 
 		  ul{
 			left:0;
@@ -218,4 +220,59 @@
 		text-align: right;
 		width: 50%;
 	}
+}
+
+//Social Menu
+
+.menu-social{
+
+  ul{
+    float:right;
+    text-align: center;
+    list-style: none;
+
+    li{
+      position: relative;
+      display: inline-block;
+
+      a{
+        &:before{
+          display: inline-block;
+          padding:0 5px;
+          vertical-align: top;
+          font-family: 'Fontawesome';
+          font-size: 20px;
+          color:#fff;
+          -webkit-font-smoothing: antialiased;
+          content: '\f0c0';
+        }
+
+        //FIND the href and change its content based on the link
+        //for a full theme add all social links here
+        &[href*='facebook.com']::before{
+          content: '\f09a';
+        }
+        &[href*='twitter.com']::before{
+          content: '\f099';
+        }
+        &[href*='youtube.com']::before{
+          content: '\f16a';
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 991px){
+  #menu-social ul{
+    top:0;
+    right:78px;
+    display:block;
+    position: absolute;
+  }
+  #menu-social li a{
+    padding-left: .5em;
+    padding-right: .5em;
+  }
 }
